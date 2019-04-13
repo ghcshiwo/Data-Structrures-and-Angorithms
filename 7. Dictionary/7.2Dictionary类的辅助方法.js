@@ -1,0 +1,12 @@
+const Dictionary = require('./Dictionary')
+
+let pbook = new Dictionary()
+pbook.add('Raymond', '123')
+pbook.add('David', '345')
+pbook.add('Cynthia', '456')
+console.log(Object.keys(pbook.datastore))
+console.log('Number of entries: ' + pbook.length())
+console.log("David's extension: " + pbook.find('David'))
+pbook.show()
+pbook.clear()
+console.log('Number of entries: ' + pbook.length())
