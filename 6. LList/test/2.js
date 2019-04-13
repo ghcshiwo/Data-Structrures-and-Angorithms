@@ -1,0 +1,16 @@
+// 实现back(n) 方法，使当前节点向后移动n 个节点。
+
+const DLList = require('../DLList')
+let link = new DLList()
+link.insert(1, 'head')
+link.insert(2, 'head')
+link.insert(3, 'head')
+link.insert(4, 'head')
+link.insert(5, 'head')
+link.insert(6, 'head')
+link.insert(7, 'head')
+link.insert(8, 'head')
+link.display()
+link.setCurrNode(1)
+link.back(6)
+link.advance(6)

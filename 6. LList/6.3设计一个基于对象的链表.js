@@ -1,0 +1,10 @@
+const LList = require('./LList')
+
+let cities = new LList()
+cities.insert('Conway', 'head')
+cities.insert('Russellville', 'Conway')
+cities.insert('Carlisle', 'Russellville')
+cities.insert('Alma', 'Carlisle')
+cities.display()
+cities.remove('Alma')
+cities.display()

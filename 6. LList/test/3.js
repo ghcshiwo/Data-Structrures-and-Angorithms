@@ -1,0 +1,15 @@
+// 实现show() 方法，只显示当前节点上的数据
+
+const LList = require('../LList')
+let link = new LList()
+link.insert(1, 'head')
+link.insert(2, 'head')
+link.insert(3, 'head')
+link.insert(4, 'head')
+link.insert(5, 'head')
+link.insert(6, 'head')
+link.insert(7, 'head')
+link.insert(8, 'head')
+link.show()
+link.advance(6)
+link.show()
