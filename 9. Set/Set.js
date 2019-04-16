@@ -76,6 +76,26 @@ class Set {
     return tempSet
   }
 
+  higher(element) {
+    let higher = Infinity
+    for (let i = 0; i < this.dataStore.length; ++i) {
+      if (element < this.dataStore[i] && this.dataStore[i] < higher) {
+        higher = this.dataStore[i]
+      }
+    }
+    return higher
+  }
+
+  lower(element) {
+    let lower = -Infinity
+    for (let i = 0; i < this.dataStore.length; ++i) {
+      if (element > this.dataStore[i] && this.dataStore[i] > lower) {
+        lower = this.dataStore[i]
+      }
+    }
+    return lower
+  }
+
   size() {
     return this.dataStore.length
   }
